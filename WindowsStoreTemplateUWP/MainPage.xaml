@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="WindowsStoreTemplateUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsStoreTemplateUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <StackPanel Background="Black">
+        <TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0,100,0,0" FontSize="32">App template - that's it!</TextBlock>
+    </StackPanel>
+
+
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True">
+            <AppBarButton Label=" Vote and review" Icon="Like" Click="ReviewButton_Click"/>
+            <AppBarButton x:Name="btnSecTile"  Label="Pin" Click="btnSecTile_Click" Icon="Pin"/>
+
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="Share" Icon="OtherUser" Click="ShareButton_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+</Page>
